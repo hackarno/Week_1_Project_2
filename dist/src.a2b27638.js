@@ -178,9 +178,10 @@ module.hot.accept(reloadCSS);
 require("./styles.css");
 var klikkaus = document.getElementById("my-button");
 var lisaa = document.getElementById("add-data");
+document.getElementById("otsikko").textContent = "Hello world";
 klikkaus.addEventListener("click", function () {
   console.log("hello world");
-  document.getElementById("otsikko").innerHTML = "My notebook";
+  document.getElementById("otsikko").textContent = "My notebook";
 });
 lisaa.addEventListener("click", function () {
   var ul = document.getElementById("lista");
